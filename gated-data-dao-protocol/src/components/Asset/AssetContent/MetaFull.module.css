@@ -1,0 +1,20 @@
+.metaFull {
+  margin-top: var(--spacer);
+  display: grid;
+  gap: var(--spacer);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.metaFull code {
+  /* magic number cause the code font has a bigger visual weight */
+  font-size: 0.8rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0;
+}
+
+/* debug output */
+.metaFull + div {
+  margin-top: var(--spacer);
+}

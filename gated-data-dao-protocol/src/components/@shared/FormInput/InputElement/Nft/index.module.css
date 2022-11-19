@@ -1,0 +1,51 @@
+.nft {
+  display: grid;
+  gap: var(--spacer);
+  grid-template-columns: none;
+  margin-top: calc(var(--spacer) / 2);
+  margin-bottom: var(--spacer);
+  align-items: center;
+}
+
+.token {
+  border: 1px solid var(--border-color);
+  padding: calc(var(--spacer) / 3);
+  border-radius: var(--border-radius);
+}
+
+.image {
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  position: relative;
+  margin: 0;
+}
+
+.actions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: calc(var(--spacer) / 4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.actions svg {
+  margin: 0;
+  fill: var(--font-color-text);
+}
+
+.refresh svg {
+  transform: scale(0.9);
+  transform-origin: center;
+}
+
+@media (min-width: 40rem) {
+  .nft {
+    grid-template-columns: 1fr 11fr;
+  }
+}

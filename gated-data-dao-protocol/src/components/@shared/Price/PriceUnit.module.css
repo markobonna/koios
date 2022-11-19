@@ -1,0 +1,46 @@
+.price {
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-base);
+
+  color: var(--font-color-text);
+  line-height: 1.2;
+}
+
+.price > div:first-child {
+  white-space: nowrap;
+}
+
+.symbol {
+  font-weight: var(--font-weight-base);
+  color: var(--color-secondary);
+  font-size: var(--font-size-base);
+}
+
+.price.large {
+  font-size: var(--font-size-large);
+}
+
+.price.small {
+  display: inline-block;
+  font-size: var(--font-size-base);
+}
+
+.price.small .symbol {
+  font-size: var(--font-size-small);
+}
+
+.price.mini {
+  display: inline-block;
+  font-size: var(--font-size-small);
+}
+
+.price.mini .symbol {
+  font-size: var(--font-size-mini);
+}
+
+.price .badge {
+  vertical-align: middle;
+  margin-left: calc(var(--spacer) / 6);
+  background: var(--color-secondary);
+}

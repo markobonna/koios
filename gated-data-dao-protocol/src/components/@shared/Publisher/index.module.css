@@ -1,0 +1,9 @@
+.publisher {
+  margin: 0;
+}
+
+@media (min-width: 32rem) {
+  .publisher {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,7 @@
+.buildId {
+  display: block;
+  font-size: var(--font-size-mini);
+  margin-bottom: var(--spacer);
+  font-family: var(--font-family-monospace);
+  text-align: center;
+}

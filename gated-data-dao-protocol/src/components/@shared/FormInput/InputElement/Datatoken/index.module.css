@@ -1,0 +1,36 @@
+.datatoken {
+  display: grid;
+  gap: var(--spacer);
+  grid-template-columns: none;
+  margin-top: calc(var(--spacer) / 2);
+  margin-bottom: var(--spacer);
+  align-items: center;
+}
+
+.token {
+  border: 1px solid var(--border-color);
+  padding: calc(var(--spacer) / 3);
+  border-radius: var(--border-radius);
+}
+
+.image {
+  width: 128px;
+  height: 128px;
+  padding: var(--spacer);
+  background: var(--background-body);
+  border: 1px solid var(--border-color);
+  fill: var(--brand-violet);
+  border-radius: 50%;
+  margin: 0;
+}
+
+.image svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 40rem) {
+  .datatoken {
+    grid-template-columns: 1fr 11fr;
+  }
+}

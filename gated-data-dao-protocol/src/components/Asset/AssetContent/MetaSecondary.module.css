@@ -1,0 +1,16 @@
+.metaSecondary {
+  font-size: var(--font-size-small);
+}
+
+.metaSecondary > * {
+  margin-top: var(--spacer);
+}
+
+.metaSecondary p {
+  /* mimic ListItem spacing */
+  margin-bottom: calc(var(--spacer) / 8);
+}
+
+.samples {
+  margin-top: var(--spacer);
+}

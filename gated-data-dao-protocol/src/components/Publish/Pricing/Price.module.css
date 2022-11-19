@@ -1,0 +1,59 @@
+.form {
+  position: relative;
+}
+
+.form *,
+.form label {
+  margin-bottom: 0;
+}
+
+.price {
+  background: var(--background-highlight);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.grid {
+  display: grid;
+  gap: calc(var(--spacer) / 2);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  padding: calc(var(--spacer) / 2);
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.fixed label {
+  display: none;
+}
+
+.datatoken {
+  color: var(--color-secondary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+}
+
+.datatoken h4 {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+.datatoken strong {
+  color: var(--font-color-text);
+}
+
+.conversion strong {
+  color: var(--color-secondary);
+}
+
+.free {
+  text-align: left;
+  margin: calc(var(--spacer) / 2);
+  font-size: var(--font-size-base);
+}
+
+.free [class*='FormInput_field'] {
+  margin: 0;
+}

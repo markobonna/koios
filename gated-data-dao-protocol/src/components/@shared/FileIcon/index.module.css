@@ -1,0 +1,31 @@
+.file {
+  font-size: var(--font-size-small);
+  background: var(--color-secondary);
+  background-size: 100%;
+  padding: var(--spacer) calc(var(--spacer) / 2);
+  margin-right: calc(var(--spacer) / 1.5);
+  height: 7.5rem;
+  width: 6rem;
+  /* cut the corner */
+  clip-path: polygon(85% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+}
+
+.file li {
+  color: var(--brand-white);
+}
+
+.file li.empty {
+  font-size: var(--font-size-mini);
+  opacity: 0.75;
+}
+
+.file.small {
+  font-size: var(--font-size-mini);
+  height: 5.5rem;
+  width: 4.5rem;
+  padding: calc(var(--spacer) / 2) calc(var(--spacer) / 4);
+}
+
+.loaderWrap {
+  margin-right: calc(var(--spacer) / 6);
+}
