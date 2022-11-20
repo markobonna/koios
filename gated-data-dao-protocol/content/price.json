@@ -1,0 +1,31 @@
+{
+  "create": {
+    "fixed": {
+      "title": "Fixed",
+      "info": "Set your price for accessing this dataset. The datatoken for this dataset will be worth the entered amount of the selected base token.",
+      "tooltips": {
+        "communityFee": "Goes to Koios Public Data DAO to improve the tools, build apps, do outreach, and more. This fee is collected when downloading or using an asset in a compute job.",
+        "marketplaceFee": "Goes to the Koios Data Dao Marketplace and is collected when downloading or using an asset in a compute job."
+      }
+    },
+    "free": {
+      "title": "Free",
+      "info": "Set your dataset as free. The datatoken for this dataset will be given for free via creating a faucet.",
+      "fields": [
+        {
+          "name": "freeAgreement",
+          "type": "checkbox",
+          "options": [
+            "I want this asset to be free. I understand network fees are still to be paid"
+          ]
+        }
+      ]
+    }
+  },
+  "approval": {
+    "tooltips": {
+      "approveSpecific": "Give the smart contract permission to spend your COIN which has to be done for each transaction. You can optionally set this to infinite in your user preferences.",
+      "approveInfinite": "Give the smart contract permission to spend infinte amounts of your COIN so you have to do this only once. You can disable allowing infinite amounts in your user preferences."
+    }
+  }
+}

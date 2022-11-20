@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "title": "Data DAO NFT Metadata",
+    "fields": [
+      {
+        "name": "nft",
+        "label": "Data NFT",
+        "type": "nft",
+        "help": "All metadata is stored on-chain in a newly deployed ERC-721 contract representing this asset, created with this name, symbol, description and image.",
+        "required": true
+      },
+      {
+        "name": "type",
+        "label": "Asset Type",
+        "type": "boxSelection",
+        "options": ["Dataset", "Algorithm"],
+        "required": true
+      },
+      {
+        "name": "name",
+        "label": "Title",
+        "placeholder": "e.g. U.S. Fortune 500 Income Statements - 2022 Q4",
+        "required": true
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "help": "Add a thorough description with as much detail as possible. You can use [Markdown](https://daringfireball.net/projects/markdown/basics). You can change the description at any time. If you provide personal data, please note that it will remain in the transaction history. ",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "name": "author",
+        "label": "Author",
+        "placeholder": "e.g. Mark Fleming",
+        "help": "Give proper attribution for your dataset. You are welcome to use a pseudonym, and you can change your author name at any time. Please note that it will remain in the transaction history.",
+        "required": true
+      },
+      {
+        "name": "tags",
+        "label": "Tags",
+        "type": "tags",
+        "placeholder": "e.g. Finance"
+      },
+      {
+        "name": "dockerImage",
+        "label": "Docker Image",
+        "help": "Please select an image to run your algorithm.",
+        "type": "boxSelection",
+        "options": [
+          "populated from algorithmContainerPresets in Publish/_constants"
+        ],
+        "required": true
+      },
+      {
+        "name": "dockerImageCustom",
+        "label": "Custom Docker Image",
+        "placeholder": "e.g. oceanprotocol/algo_dockers:node-vibrant or quay.io/startx/mariadb",
+        "help": "Provide the name and the tag of a public Docker hub image or the custom image if you have it hosted in a 3rd party repository",
+        "type": "container",
+        "required": true
+      },
+      {
+        "name": "dockerImageChecksum",
+        "label": "Docker Image Checksum",
+        "placeholder": "e.g. sha256:xiXqb7Vet0FbN9q0GFMgUdi5C22wjJT0i2G6lYKC2jl6QxkKzVz7KaPDgqfTMjNF",
+        "help": "Provide the checksum(DIGEST) of your docker image.",
+        "required": true
+      },
+      {
+        "name": "dockerImageCustomEntrypoint",
+        "label": "Docker Image Entrypoint",
+        "placeholder": "e.g. python $ALGO",
+        "help": "Provide the entrypoint for your algorithm.",
+        "required": true
+      },
+      {
+        "name": "termsAndConditions",
+        "label": "Terms & Conditions",
+        "type": "checkbox",
+        "options": ["I agree to the Terms and Conditions"],
+        "required": true
+      }
+    ]
+  },
+  "services": {
+    "title": "Access",
+    "fields": [
+      {
+        "name": "dataTokenOptions",
+        "label": "Datatoken",
+        "type": "datatoken",
+        "help": "The datatoken used for accessing this asset will be created with this name & symbol.",
+        "required": true
+      },
+      {
+        "name": "providerUrl",
+        "label": "Provider URL",
+        "type": "providerUrl",
+        "help": "Enter the URL for your custom [provider](https://github.com/oceanprotocol/provider/) or leave as is to use the default one. If you change your provider URL after adding your file, please add & validate your file again.",
+        "placeholder": "e.g. https://provider.oceanprotocol.com/",
+        "required": true
+      },
+      {
+        "name": "files",
+        "label": "File",
+        "placeholder": "e.g. https://www.kaggle.com/datasets/shilongzhuang/soccer-world-cup-challenge?select=2022_world_cup_matches.csv",
+        "help": "This URL will be stored encrypted after publishing. **Please make sure that the endpoint is accessible over the internet and is not protected by a firewall or by credentials.** For a compute dataset, your file should match the file type required by the algorithm, and should not exceed 1 GB in file size. ",
+        "prominentHelp": true,
+        "type": "files",
+        "required": true
+      },
+      {
+        "name": "links",
+        "label": "Sample file",
+        "placeholder": "e.g. https://www.kaggle.com/datasets/shilongzhuang/soccer-world-cup-challenge?select=2022_world_cup_matches.csv",
+        "help": "This file should reveal the data structure of your dataset, e.g. by including the header and one line of a CSV file. This file URL will be publicly available after publishing. **Please make sure that the endpoint is accessible over the internet and is not protected by a firewall or by credentials.**",
+        "prominentHelp": true,
+        "type": "files"
+      },
+      {
+        "name": "algorithmPrivacy",
+        "label": "Algorithm Privacy",
+        "type": "checkbox",
+        "options": ["Keep my algorithm private"],
+        "help": "By default, your algorithm can be downloaded for free or a fixed price, in addition to running in compute jobs. Enabling this option will prevent downloading, so your algorithm can only be run as part of a compute job on a dataset.",
+        "required": false
+      },
+      {
+        "name": "access",
+        "label": "Access Type",
+        "help": "Choose how you want your files to be accessible for the specified price.",
+        "type": "boxSelection",
+        "options": ["Access", "Compute"],
+        "required": true,
+        "disclaimer": "Please do not provide downloadable personal data without the consent of the data subjects.",
+        "disclaimerValues": ["Download"]
+      },
+      {
+        "name": "timeout",
+        "label": "Data Availability Timeframe",
+        "help": "Define how long buyers should be able to download the dataset again after the initial purchase.",
+        "type": "select",
+        "options": ["Forever", "1 day", "1 week", "1 month", "1 year"],
+        "sortOptions": false,
+        "required": true
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "fields": [
+      {
+        "name": "dummy content, actual content is defined under 'create' key in ../price.json"
+      }
+    ]
+  },
+  "preview": {
+    "title": "Preview"
+  },
+  "submission": {
+    "title": "Submit"
+  }
+}

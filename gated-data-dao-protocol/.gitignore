@@ -6,7 +6,6 @@ out
 .env.example
 coverage
 .husky
-
 .cache
 .next
 .artifacts
@@ -15,8 +14,6 @@ coverage
 .github
 .jest
 readme.md
-content
-scripts
 repo-metadata.json
 networks-metadata.json
 src/@types/subgraph

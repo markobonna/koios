@@ -1,0 +1,6 @@
+{
+  "links": [],
+  "stats": {
+    "note": "Counted on-chain from our NFT factories. Includes assets in all EVM compatible blockchains intergrated with Koios Protocol forks or Ocean Protocol forks and [purgatory](https://github.com/markobonna/koios)."
+  }
+}

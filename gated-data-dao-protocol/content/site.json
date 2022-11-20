@@ -1,0 +1,17 @@
+{
+  "siteTitle": "Koios Public Data Dao",
+  "siteTagline": "Below are the datasets for Koios Public Data Dao. Change to another DAO to view it's datasets.",
+  "siteUrl": "https://wallpaperaccess.com/full",
+  "siteImage": "https://wallpaperaccess.com/full/512720.png",
+
+  "menu": [
+    {
+      "name": "Publish or Request a New Dataset",
+      "link": "/publish/1"
+    },
+    {
+      "name": "Your Dataset Purchases and Sales",
+      "link": "/profile"
+    }
+  ]
+}
