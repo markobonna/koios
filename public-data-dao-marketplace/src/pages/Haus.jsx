@@ -10,24 +10,19 @@ import HausCard from '../components/hausCard';
 const Haus = () => {
   return (
     <Layout>
-      <MainViewLayout header='Haus'>
+      <MainViewLayout header='Koios Token'>
         <Flex justifyContent='space-between'>
           <Flex direction='column' w='90%'>
             <ContentBox mt={6} maxW='800px'>
               <Flex justifyContent='space-between' css={{ gap: '15px;' }}>
                 <Flex direction='column' maxW='325px' gap='19px'>
                   <Text fontSize='2xl' fontWeight='900'>
-                    The Koios token aligns all DAOs on the platform.
+                    The Koios token aligns all Data DAOs on the platform.
                   </Text>
                   <Text fontSize='md' fontWeight='700'>
                     As we create more value together, that value flows back to
                     the Koios token, shared by all communities on the platform
                   </Text>
-                  <a href='https://daohaus.club/token'>
-                    <Text fontSize='md' fontWeight='700'>
-                      More about Koios
-                    </Text>
-                  </a>
                 </Flex>
                 <Flex direction='column' alignItems='center'>
                   <Avatar
@@ -40,11 +35,6 @@ const Haus = () => {
                       marginBottom: '26px;',
                     }}
                   />
-                  <a href='https://www.coingecko.com/en/coins/daohaus'>
-                    <Text fontSize='md' fontWeight='700'>
-                      View on Coingecko
-                    </Text>
-                  </a>
                 </Flex>
               </Flex>
             </ContentBox>
@@ -58,12 +48,12 @@ const Haus = () => {
             />
             <ContentBox maxW='800px'>
               <Text fontSize='2xl' fontWeight='800' mb='43px'>
-                Things to do with HAUS
+                Things to do with Koios
               </Text>
               <Flex justifyContent='space-between' fontWeight='700'>
                 <Flex direction='column'>
                   <Text fontSize='xl' mb='13px'>
-                    Get Haus
+                    Get Koios
                   </Text>
                   <Link
                     href='https://app.balancer.fi/#/trade/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/0xf2051511B9b121394FA75B8F7d4E7424337af687'
@@ -94,14 +84,6 @@ const Haus = () => {
                   >
                     <Text fontSize='sm'>ON GNOSIS CHAIN &gt;</Text>
                   </Link>
-                </Flex>
-                <Flex direction='column'>
-                  <Text fontSize='xl' mb='13px'>
-                    Govrn
-                  </Text>
-                  <a href='https://uberhaus.club'>
-                    <Text fontSize='sm'>Join UBERHAUS &gt;</Text>
-                  </a>
                 </Flex>
               </Flex>
             </ContentBox>

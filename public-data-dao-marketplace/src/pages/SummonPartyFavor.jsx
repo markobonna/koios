@@ -170,7 +170,7 @@ const SummonPartyFavor = () => {
 
   return (
     <Layout>
-      <MainViewLayout header='Summon Party Favor'>
+      <MainViewLayout header='Create an Event'>
         {injectedChain ? (
           <>
             {!isSummoning ? (

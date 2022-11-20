@@ -50,10 +50,10 @@ export const defaultThemeData = {
   },
   colors: {
     THEME_NAME: 'DEFAULT',
-    primary: getAllShades('#10153d'),
+    primary: getAllShades('#f6f8fa'),
     secondary: getAllShades('#EB8A23'),
     background: getAllShades('#03061B'),
-    primaryAlpha: rgba('#10153d', 0.9),
+    primaryAlpha: rgba('#f6f8fa', 0.9),
     secondaryAlpha: rgba('#EB8A23', 0.75),
   },
   fonts: {

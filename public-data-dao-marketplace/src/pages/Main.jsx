@@ -20,7 +20,7 @@ const Main = () => {
   };
 
   return (
-    <MainViewLayout header='Hub'>
+    <MainViewLayout header='Koios'>
       <Flex wrap='wrap'>
         <Box
           w={['100%', null, null, null, '60%']}

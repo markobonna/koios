@@ -156,7 +156,7 @@ const Summon = () => {
 
   return (
     <Layout>
-      <MainViewLayout header='Summon'>
+      <MainViewLayout header='Create A Data Dao'>
         {injectedChain ? (
           <>
             {!isSummoning ? (

@@ -3,10 +3,10 @@ import { rgba } from 'polished';
 import BrandImg from '../assets/img/koios-svg.svg';
 
 export const defaultTheme = {
-  primary500: '#10153d',
-  primaryAlpha: rgba('#10153d', 0.9),
+  primary500: '#434453',
+  primaryAlpha: rgba('#f6f8fa', 0.9),
   secondary500: '#EB8A23',
-  secondaryAlpha: rgba('#10153d', 0.75),
+  secondaryAlpha: rgba('#f6f8fa', 0.75),
   bg500: '#03061B',
   bgAlpha: '#03061B',
   bgOverlayOpacity: 0.75,
