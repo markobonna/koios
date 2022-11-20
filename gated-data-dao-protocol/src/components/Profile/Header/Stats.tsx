@@ -74,30 +74,6 @@ export default function Stats({
         value={sales < 0 ? 0 : sales}
       />
       <NumberUnit label="Published" value={assetsTotal} />
-      <NumberUnit
-        label={
-          lockedOcean === 0 && accountId === web3.accountId ? (
-            <Button
-              className={styles.link}
-              style="text"
-              href="https://df.oceandao.org"
-            >
-              Lock OCEAN
-            </Button>
-          ) : (
-            <>
-              <PriceUnit price={lockedOcean} symbol="OCEAN" /> locked
-            </>
-          )
-        }
-        value={
-          <Conversion
-            price={lockedOcean > 0 ? lockedOcean : 0}
-            symbol="OCEAN"
-            hideApproximateSymbol
-          />
-        }
-      />
     </div>
   )
 }

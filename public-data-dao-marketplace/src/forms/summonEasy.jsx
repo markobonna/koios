@@ -172,13 +172,7 @@ const SummonEasy = ({ daoData, setDaoData, handleSummon }) => {
                   />
                 </Text>
               ) : null}
-              <Button
-                variant='outline'
-                my={5}
-                onClick={() => setMultiSummoners(!multiSummoners)}
-              >
-                {!multiSummoners ? 'Add Multiple Summoners' : 'Cancel'}
-              </Button>
+
               <Box className='StepControl'>
                 {currentError && (
                   <Box color='red.500' fontSize='m' mr={5}>
@@ -187,7 +181,7 @@ const SummonEasy = ({ daoData, setDaoData, handleSummon }) => {
                   </Box>
                 )}
                 <Button onClick={() => handleSummon()} disabled={currentError}>
-                  Summon
+                  Create your Data Dao
                 </Button>
               </Box>
             </Box>
@@ -196,23 +190,6 @@ const SummonEasy = ({ daoData, setDaoData, handleSummon }) => {
           )}
         </Flex>
       </Box>
-
-      {injectedChain.network === 'mainnet' ? (
-        <Text mt={10}>
-          Transaction fees got you down? Check our
-          <Link
-            href='https://daohaus.club/docs/users/summon'
-            rel='noreferrer noopener'
-            target='_blank'
-            color='secondary.500'
-            mx={2}
-          >
-            Quick Start Guide
-          </Link>
-          on how to switch to xDAI for cheaper, faster interactions for your
-          community.
-        </Text>
-      ) : null}
     </Box>
   );
 };

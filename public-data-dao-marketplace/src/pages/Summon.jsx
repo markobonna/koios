@@ -208,7 +208,7 @@ const Summon = () => {
             textAlign='center'
           >
             <Box fontSize='3xl' fontFamily='heading' fontWeight={700} mb={10}>
-              Connect your wallet to summon a DAO.
+              Connect your wallet to Create a DataDAO.
             </Box>
 
             <Flex direction='column' align='center'>
