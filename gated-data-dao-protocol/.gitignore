@@ -13,7 +13,7 @@ coverage
 .storybook
 .github
 .jest
-readme.md
+
 repo-metadata.json
 
 src/@types/subgraph
