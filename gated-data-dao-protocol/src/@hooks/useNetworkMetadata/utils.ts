@@ -28,6 +28,9 @@ export function getNetworkDisplayName(
   let displayName
 
   switch (networkId) {
+    case 31415:
+      displayName = 'Wallaby'
+      break
     case 137:
       displayName = 'Polygon'
       break
