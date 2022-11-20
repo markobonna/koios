@@ -57,14 +57,14 @@ export default function Fees({
     <>
       <div className={styles.fees}>
         <Default
-          title="Community Swap Fee"
+          title="Koios Community Fee"
           name="communityFee"
           tooltip={tooltips.communityFee}
           value={oceanCommunitySwapFee}
         />
 
         <Default
-          title="Marketplace Fee"
+          title="Koios Marketplace Fee"
           name="marketplaceFee"
           tooltip={tooltips.marketplaceFee}
           value={appConfig?.publisherMarketFixedSwapFee}

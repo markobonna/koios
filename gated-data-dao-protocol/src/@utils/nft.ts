@@ -50,10 +50,10 @@ export function generateNftMetadata(): NftMetadata {
   const imageData = `data:image/svg+xml,${encodeSvg(svg.outerHTML)}`
 
   const newNft: NftMetadata = {
-    name: 'Ocean Data NFT',
-    symbol: 'OCEAN-NFT',
-    description: `This NFT represents an asset in the Ocean Protocol v4 ecosystem.`,
-    external_url: 'https://market.oceanprotocol.com',
+    name: 'Koios Data NFT',
+    symbol: 'KOIOS-NFT',
+    description: `This NFT represents an asset in the Koios Protocol ecosystem.`,
+    external_url: 'https://www.koios.com',
     background_color: '141414', // dark background
     image_data: imageData
   }

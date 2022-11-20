@@ -1,7 +1,6 @@
 .app {
   height: 100%;
-  background: url('../../../node_modules/@oceanprotocol/art/waves/waves.svg')
-    no-repeat center 13.5rem;
+  background-color: #f6f8fa;
 
   /* sticky footer technique */
   display: flex;

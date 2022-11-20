@@ -153,14 +153,6 @@ export default function MetadataFields(): ReactElement {
         component={Input}
         name="metadata.termsAndConditions"
       />
-      <a
-        className={styles.termsLink}
-        href="/terms"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        View Terms and Conditions
-      </a>
     </>
   )
 }

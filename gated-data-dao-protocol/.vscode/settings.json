@@ -13,5 +13,6 @@
   "search.exclude": {
     "**/.next": true,
     "**/out": true
-  }
+  },
+  "search.useIgnoreFiles": false
 }
