@@ -3,7 +3,7 @@ import { rgba } from 'polished';
 import BrandImg from '../assets/img/koios-svg.svg';
 
 export const defaultTheme = {
-  primary500: '#434453',
+  primary500: '#0a0b1b',
   primaryAlpha: rgba('#f6f8fa', 0.9),
   secondary500: '#EB8A23',
   secondaryAlpha: rgba('#f6f8fa', 0.75),

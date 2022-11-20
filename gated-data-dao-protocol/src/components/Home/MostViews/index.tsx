@@ -58,10 +58,10 @@ export default function MostViews(): ReactElement {
 
   return (
     <section className={styles.section}>
-      <h3>
+      <h2>
         Public datasets with the Most Views in the <span>last 30 days</span>
         <Tooltip content="Datasets from all supported chains. Not affected by your selected networks." />
-      </h3>
+      </h2>
 
       <AssetList
         assets={mostViewed}

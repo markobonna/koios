@@ -1,7 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react';
 import React from 'react';
 
-import FeaturedDaos from '../components/featuredDaos';
 import HausCard from '../components/hausCard';
 import HubProfileCard from '../components/hubProfileCard';
 import HubSignedOut from '../components/hubSignedOut';
@@ -40,7 +39,7 @@ const Main = () => {
           <Box w={['100%', null, null, null, '40%']}>
             <HausCard />
 
-            {hasDaos() ? <NewsFeed /> : <FeaturedDaos />}
+            {hasDaos() ? <NewsFeed /> : <NewsFeed />}
           </Box>
         )}
       </Flex>

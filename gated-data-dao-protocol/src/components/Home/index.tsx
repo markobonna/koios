@@ -56,27 +56,37 @@ export default function HomePage(): ReactElement {
   return (
     <>
       <section className={styles.section}>
-        <h3>Your Saved Public Datasets</h3>
+        <h2>Your Saved Public Datasets</h2>
         <Bookmarks />
       </section>
 
       <Allocations />
 
-      <SectionQueryResult
-        title="Public Datasets By Commited Funding "
-        query={queryMostAllocation}
-      />
+      <section className={styles.section}>
+        <h2>Public Datasets By Commited Funding</h2>
+        <SectionQueryResult query={queryMostAllocation} />
+      </section>
 
-      <SectionQueryResult
-        title="Public Datasets By Sales"
-        query={queryMostSales}
-      />
+      <section className={styles.section}>
+        <h2>Public Datasets By Sales</h2>
+        <SectionQueryResult query={queryMostSales} />
+      </section>
       <MostViews />
-      <TopSales title="Publishers By Sales" />
-      <TopTags title="Top Public Dataset Tags By Sales" />
 
+      <section className={styles.section}>
+        <h2>Publishers By Sales</h2>
+        <TopSales />
+      </section>
+
+      <section className={styles.section}>
+        <h2>Top Public Dataset Tags By Sales</h2>
+        <TopTags />
+      </section>
+
+      <section className={styles.section}>
+        <h2>Recently Published Public Datasets</h2>
+      </section>
       <SectionQueryResult
-        title="Recently Published Public Datasets"
         query={queryLatest}
         action={
           <Button style="text" to="/search?sort=nft.created&sortOrder=desc">

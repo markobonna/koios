@@ -21,6 +21,7 @@
 
   --color-primary: #ff4092;
   --color-secondary: #8b98a9;
+  --color-tertiary: #ffffff;
 
   /* Only use these vars for most color referencing for easy light/dark mode */
   --font-color-text: #41474e;

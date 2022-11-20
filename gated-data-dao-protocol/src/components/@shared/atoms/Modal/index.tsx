@@ -32,7 +32,7 @@ export default function Modal({
       </button>
 
       <header className={styles.header}>
-        <h2 className={styles.title}>{title}</h2>
+        <h3 className={styles.title}>{title}</h3>
       </header>
 
       {children}

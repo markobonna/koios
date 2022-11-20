@@ -86,7 +86,7 @@ export default function Allocations(): ReactElement {
 
   return (
     <section className={styles.section}>
-      <h3>Datasets you own</h3>
+      <h2>Datasets you own</h2>
       <AssetListTable data={data} isLoading={loading} />
     </section>
   )
